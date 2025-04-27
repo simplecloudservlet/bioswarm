@@ -1,5 +1,6 @@
 # BioSwarm Simulator
 Author: Lucio Agostinho Rocha
+Contact: luciorocha at utfpr dot edu dot br
 
 ## How to cite:
 ROCHA, L. A. BioSwarm: a Bio-inspired Swarm Simulator. In 1st IEEE Latin American Conference on Internet of Things, Fortaleza/CE, Brazil, 2025.
