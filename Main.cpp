@@ -1478,59 +1478,59 @@ int main(int argc, char *argv[]) {
     endl;
   
   if(argc != 11){
-    printf("\tUsage:\t\t./bioswarm <1-NUM_PARTICLES> <2-COLLISION> <3-EVO> <4-MAX_LIMIT> <5-MIN_LIMIT> <6-COLOR> <7-SHOW_AREA> <8-SHOW_GRID> <9-REFRESH_RATE> <10-DEBUG>\
-\n\tExample:\t./bioswarm 1000  0  11  0  0  2  0  0  0  1\
-\n\n\t<1-NUM_PARTICLES>\tNumber of particles\
-\n\t\t\t\t[1-n): Number of particles\
-\n\t<2-COLLISION>\tCollision detection\
-\n\t\t\t\t0: Disabled\n\t\t\t\t1: Enabled\
-\n\t<3-EVO>\t\tEvolutive Strategy\
-\n\t\t\t\t0: Boids: Separation,Alignment,Cohesion\
-\n\t\t\t\t1: Boids: Static goal up-right\
-\n\t\t\t\t2: Boids: Static goal 2\
-\n\
-\n\t\t\t\t3: Theorem 1.1: up-right \
-\n\t\t\t\t4: Theorem 1.1: up-right (minor variation)\
-\n\
-\n\t\t\t\t5: Theorem 1.2: down-right\
-\n\t\t\t\t6: Theorem 1.2: down-right (minor variation)\
-\n\
-\n\t\t\t\t7: Theorem 1.3: down-left\
-\n\t\t\t\t8: Theorem 1.3: down-left (minor variation)\
-\n\
-\n\t\t\t\t9: Theorem 1.4: up-left\
-\n\t\t\t\t10: Theorem 1.4: up-left (minor variation)\
-\n\
-\n\t\t\t\t11: Test Function: Sphere Function (Minimum global: (0.0))\
-\n\t\t\t\t12: Test Function: Rastrigin Function (Minimum global: (0.0))\
-\n\t\t\t\t13: Test Function: Ackley Function (Minimum global: (0.0))\
-\n\t\t\t\t14: Test Function: Adjiman Function (Minimum global: (-2.02181))\
-\n\
-\n\t\t\t\t15: Theorem 4.1.1: Fast supernova (up-right)\
-\n\t\t\t\t16: Theorem 4.1.2: Slow supernova (up-right)\
-\n\
-\n\t\t\t\t17: Theorem 4.2.1: Fast supernova down-right\
-\n\
-\n\t\t\t\t18: Theorem 4.3: down-left\
-\n\t\t\t\t19: Theorem 4.4: up-right\
-\n\
-\n\t\t\t\t20: Custom F1\
-\n\
-\n\t<4-MAX_LIMIT>\tMaximum reacheable X point\
-\n\t\t\t\t[0,1]: (Default: 0.8)\
-\n\t<5-MIN_LIMIT>\tMinimum reacheable Y point\
-\n\t\t\t\t[-1,0]: (Default: -0.8)\
-\n\t<6-COLOR>\t\tColor display\
-\n\t\t\t\t0: Monochromatic0 (default)\n\t\t\t\t1: Monochromatic1\n\t\t\t\t2: Multicolor\
-\n\t<7-SHOW_AREA>\tShow area of [MAX_LIMIT,MIN_LIMIT].\
-\n\t\t\t\t0: Disabled\n\t\t\t\t1: Enabled\
-\n\t<8-SHOW_GRID>\tShow horizontal and vertical grids\
-\n\t\t\t\t0: Disabled\n\t\t\t\t1: Enabled\
-\n\t<9-REFRESH_RATE>\tRefresh rate (ms)\
-\n\t\t\t\t[0,n): (Default: 0)\
-\n\t<10-DEBUG>\tDebug\
-\n\t\t\t\t0: Disabled\n\t\t\t\t1: Enabled\
-\n\n");
+    cout << "\tUsage:\t\t./bioswarm <1-NUM_PARTICLES> <2-COLLISION> <3-EVO> <4-MAX_LIMIT> <5-MIN_LIMIT> <6-COLOR> <7-SHOW_AREA> <8-SHOW_GRID> <9-REFRESH_RATE> <10-DEBUG>" <<
+"\n\tExample:\t./bioswarm 1000  0  11  0  0  2  0  0  0  1" <<
+"\n\n\t<1-NUM_PARTICLES>\tNumber of particles" <<
+"\n\t\t\t\t[1-n): Number of particles" <<
+"\n\t<2-COLLISION>\tCollision detection" <<
+"\n\t\t\t\t0: Disabled\n\t\t\t\t1: Enabled" <<
+"\n\t<3-EVO>\t\tEvolutive Strategy" <<
+"\n\t\t\t\t0: Boids: Separation,Alignment,Cohesion" <<
+"\n\t\t\t\t1: Boids: Static goal up-right" <<
+"\n\t\t\t\t2: Boids: Static goal 2" <<
+"\n" <<
+"\n\t\t\t\t3: Theorem 1.1: up-right " <<
+"\n\t\t\t\t4: Theorem 1.1: up-right (minor variation)" <<
+"\n" <<
+"\n\t\t\t\t5: Theorem 1.2: down-right" <<
+"\n\t\t\t\t6: Theorem 1.2: down-right (minor variation)" <<
+"\n" <<
+"\n\t\t\t\t7: Theorem 1.3: down-left" <<
+"\n\t\t\t\t8: Theorem 1.3: down-left (minor variation)" <<
+"\n" <<
+"\n\t\t\t\t9: Theorem 1.4: up-left" <<
+"\n\t\t\t\t10: Theorem 1.4: up-left (minor variation)" <<
+"\n" <<
+"\n\t\t\t\t11: Test Function: Sphere Function (Minimum global: (0.0))" <<
+"\n\t\t\t\t12: Test Function: Rastrigin Function (Minimum global: (0.0))" <<
+"\n\t\t\t\t13: Test Function: Ackley Function (Minimum global: (0.0))" <<
+"\n\t\t\t\t14: Test Function: Adjiman Function (Minimum global: (-2.02181))" <<
+"\n" <<
+"\n\t\t\t\t15: Theorem 4.1.1: Fast supernova (up-right)" <<
+"\n\t\t\t\t16: Theorem 4.1.2: Slow supernova (up-right)" <<
+"\n" <<
+"\n\t\t\t\t17: Theorem 4.2.1: Fast supernova down-right" <<
+"\n" <<
+"\n\t\t\t\t18: Theorem 4.3: down-left" <<
+"\n\t\t\t\t19: Theorem 4.4: up-right" <<
+"\n" <<
+"\n\t\t\t\t20: Custom F1" <<
+"\n" <<
+"\n\t<4-MAX_LIMIT>\tMaximum reacheable X point" <<
+"\n\t\t\t\t[0,1]: (Default: 0.8)" <<
+"\n\t<5-MIN_LIMIT>\tMinimum reacheable Y point" <<
+"\n\t\t\t\t[-1,0]: (Default: -0.8)" <<
+"\n\t<6-COLOR>\t\tColor display" <<
+"\n\t\t\t\t0: Monochromatic0 (default)\n\t\t\t\t1: Monochromatic1\n\t\t\t\t2: Multicolor" <<
+"\n\t<7-SHOW_AREA>\tShow area of [MAX_LIMIT,MIN_LIMIT]." <<
+"\n\t\t\t\t0: Disabled\n\t\t\t\t1: Enabled" <<
+"\n\t<8-SHOW_GRID>\tShow horizontal and vertical grids" <<
+"\n\t\t\t\t0: Disabled\n\t\t\t\t1: Enabled" <<
+"\n\t<9-REFRESH_RATE>\tRefresh rate (ms)" <<
+"\n\t\t\t\t[0,n): (Default: 0)" <<
+"\n\t<10-DEBUG>\tDebug" <<
+"\n\t\t\t\t0: Disabled\n\t\t\t\t1: Enabled" <<
+"\n\n" << endl;
     exit(1);
   }
     
