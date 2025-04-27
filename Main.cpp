@@ -12,7 +12,7 @@
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with Foobar.  If not, see <https://www.gnu.org/licenses/>
+    along with BioSwarm Simulator.  If not, see <https://www.gnu.org/licenses/>
  **/
 
 #include <stdio.h>
@@ -1462,6 +1462,21 @@ void Timer(int value) {
 
 int main(int argc, char *argv[]) {
 
+  cout << "This file is part of BioSwarm Simulator.\n\n" <<
+    "BioSwarm Simulator is free software: you can redistribute it and/or modify\n" <<
+    "it under the terms of the GNU General Public License as published by\n" <<
+    "the Free Software Foundation, either version 3 of the License, or\n" <<
+    "(at your option) any later version.\n" <<
+    "\n" <<
+    "BioSwarm Simulator is distributed in the hope that it will be useful,\n" <<
+    "but WITHOUT ANY WARRANTY; without even the implied warranty of\n" <<
+    "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n" <<
+    "GNU General Public License for more details.\n" <<
+    "\n" <<
+    "You should have received a copy of the GNU General Public License\n" <<
+    "along with BioSwarm Simulator.  If not, see <https://www.gnu.org/licenses/>\n\n" <<
+    endl;
+  
   if(argc != 11){
     printf("\tUsage:\t\t./bioswarm <1-NUM_PARTICLES> <2-COLLISION> <3-EVO> <4-MAX_LIMIT> <5-MIN_LIMIT> <6-COLOR> <7-SHOW_AREA> <8-SHOW_GRID> <9-REFRESH_RATE> <10-DEBUG>\
 \n\tExample:\t./bioswarm 1000  0  11  0  0  2  0  0  0  1\
