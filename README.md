@@ -1,5 +1,6 @@
 # BioSwarm Simulator
 Author: Lucio Agostinho Rocha
+
 Contact: luciorocha at utfpr dot edu dot br
 
 ## How to cite:
